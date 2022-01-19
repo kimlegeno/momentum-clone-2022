@@ -8,15 +8,19 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15t"
-        ype="text"
-        placeholder="What is your name?"
-      />
-      <button>Log in</button>
-    </form>
+    <div></div>
+    <div class="modal">
+      <form class="hidden modal-form" id="login-form">
+        <p>Please write down your name</p>
+        <input
+          required
+          maxlength="15t"
+          ype="text"
+          placeholder="What is your name?"
+        />
+        <button>Log in</button>
+      </form>
+    </div>
     <h2 id="clock">00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
