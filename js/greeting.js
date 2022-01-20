@@ -1,7 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-const bg = document.querySelector("div:first-child");
+const bg = document.querySelector(".modal");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -17,7 +17,7 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello ${savedUsername}`;
+  greeting.innerText = `Have a Nice Day ${savedUsername}`;
 }
 
 const savedUsername = localStorage.getItem("USERNAME_KEY");

@@ -9,12 +9,12 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      city.innerText = `도시: ${data.name}`;
+      weather.innerText = `날씨: ${data.weather[0].main} 온도: ${data.main.temp}°`;
     });
 }
 function onGeoErr() {
-  alert("Can't find you. No weather  for you");
+  weather.innerText = "I can't give you the weather information";
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoErr);
