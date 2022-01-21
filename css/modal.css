@@ -1,11 +1,3 @@
-.modal {
-  display: flex;
-  height: 100vh;
-  width: 40%;
-  position: relative;
-  left: 30%;
-}
-
 .modal-form {
   width: 100%;
   height: 50%;
