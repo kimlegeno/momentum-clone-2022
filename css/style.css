@@ -3,6 +3,8 @@
 @import "modal.css";
 @import "nav.css";
 @import "main.css";
+@import "calculator.css";
+@import "game.css";
 
 html,
 body {
@@ -32,4 +34,3 @@ body {
   z-index: -1;
   opacity: 0.4;
 }
-
